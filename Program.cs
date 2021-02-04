@@ -6,7 +6,9 @@ namespace FacadePatternDemo
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      var facade = new Facade();
+      facade.SubsystemOneDoWork();
+      facade.SubsystemTwoDoWork();
     }
   }
 }
